@@ -74,7 +74,7 @@ const Questions: React.FC = () => {
               </div>
             </div>
             {openQuestionId === item.id && (
-              <div className="bg-[#B2A3BA] p-5 mt-4 text-black answer-box">
+              <div className="bg-white border-2 border-black p-5 mt-4 text-black answer-box">
                 {item.answer}
               </div>
             )}

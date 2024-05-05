@@ -1,0 +1,64 @@
+.header-image {
+  background-image: url("../../assets/Intersect.png");
+  background-repeat: no-repeat;
+  background-size: 100% 90vh;
+}
+.baft-animation {
+  animation: baft 1s ease-in-out infinite;
+}
+@keyframes baft {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(
+      -2deg
+    ); /* Rotate to -10 degrees at the midpoint of the animation */
+  }
+}
+.image_animation {
+  animation: image 1s ease-in-out;
+  opacity: 100%;
+}
+
+@keyframes image {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(0%);
+  }
+}
+
+.text_animation > * {
+  opacity: 0;
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 100;
+    transform: translateX(0%);
+  }
+}
+.text_animation > *:nth-child(1) {
+  animation: text 1s ease-in-out forwards 0.1s; /* Apply animation with delay */
+}
+
+.text_animation > *:nth-child(2) {
+  animation: text 1s ease-in-out forwards 0.5s; /* Apply animation with delay */
+}
+
+.text_animation > *:nth-child(3) {
+  animation: text 1s ease-in-out forwards 0.9s; /* Apply animation with delay */
+}
+
+.text_animation > *:nth-child(4) {
+  animation: text 1s ease-in-out forwards 1s; /* Apply animation with delay */
+}

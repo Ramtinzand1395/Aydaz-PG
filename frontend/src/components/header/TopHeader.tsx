@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const TopHeader:React.FC = () => {
   const [Openmenu, setOpenmenu] = useState(false);
   return (
-    <div className=" flex items-center justify-between p-2 px-5">
+    <div className=" h-[10vh] flex items-center justify-between p-2 px-5 border-b-2 border-black">
       {/* menu */}
       <div className="">
         <TiThMenu

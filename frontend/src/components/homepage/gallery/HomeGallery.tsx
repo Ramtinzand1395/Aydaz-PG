@@ -1,15 +1,42 @@
-import React from "react";
-
+import React, { useEffect, useRef, useState } from "react";
+import "./gallerystyles.css"
 const HomeGallery:React.FC  = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const h4Ref = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    if (h4Ref.current) {
+      observer.observe(h4Ref.current);
+    }
+
+    return () => {
+      if (h4Ref.current) {
+        observer.unobserve(h4Ref.current);
+      }
+    };
+  }, []);
   return (
-    <div className="gallerybackground w-full ">
-      <div className="grid grid-cols-3">
+    <div className="gallerybackground w-full h-[100vh] ">
+      <div className="grid grid-cols-3 ">
         <div className=""></div>
         <div className="flex flex-col items-start justify-center gap-10 h-[80vh] col-span-2 container">
-          <h3 className="font-bold text-6xl text-[#281A3D]  ">
+          <h3 ref={h4Ref}  className={`font-bold text-6xl text-[#281A3D] ${
+                isVisible ? 'title_animation' : ''
+              }`}>
             گالری هنربافتمو من
           </h3>
-          <p className="mx-5">
+          <p className={`mx-5 ${
+                isVisible ? 'text_animation' : ''
+              }`}>
             اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن
             های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم ایپسوم یا
             طرح‌نما (به انگلیسی: Lorem ipsum) متنی ساختگی و بدون معنی است که
