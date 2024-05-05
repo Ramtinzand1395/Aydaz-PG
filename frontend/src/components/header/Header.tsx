@@ -13,19 +13,27 @@ const Header = () => {
         <div className="md:col-span-2 hidden md:block">
           <img className="w-full h-[40vw]" src={baft} alt="" />
         </div>
-        <div className=" rounded-xl p-5 h-auto  mt-5 md:mt-[10vh] mr-5 md:mr-0 text_animation col-span-6 md:col-span-5">
+        <div className=" flex flex-col justify-around rounded-xl p-5 h-auto  mt-5 md:mt-[10vh] mr-5 md:mr-0 text_animation col-span-6 md:col-span-5">
           <h2
-            className="font-bold whitespace-nowrap
+            dir="ltr"
+            className="font-bold whitespace-nowrap text-start
           lg:text-5xl md:text-2xl text-lg 
-           text-[#281A3D] mb-2 md:mb-10"
+           text-[#281A3D] "
           >
             AydaZ Academy
           </h2>
-          <p className="text-xs md:text-lg text-justify">
-            اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن
-            های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم ایپسوم یا
-            های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم ایپسوم یا
-            متنی ساختگی و بدون معنی است کهمتنی ساختگی و بدون معنی است که
+          <p
+            dir="ltr"
+            className=" whitespace-nowrap
+          lg:text-3xl md:text-xl text-lg text-end"
+          >
+            brids style
+          </p>
+          <p
+            className=" whitespace-nowrap font-bold
+          lg:text-3xl md:text-xl text-lg  text-center"
+          >
+            آموزش و خدمات تخصصی بافتمو در ایران
           </p>
         </div>
         <div className="justify-end flex image_animation col-span-6 md:col-span-5">
