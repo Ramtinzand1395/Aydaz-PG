@@ -5,7 +5,7 @@ import Register from "./register/Register";
 import Login from "./login/Login";
  
 const Login_register:React.FC  = () => {
-  const [signInClicked, setSignInClicked] = useState(false);
+  const [signInClicked, setSignInClicked] = useState<boolean>(false);
 
   return (
     <div>

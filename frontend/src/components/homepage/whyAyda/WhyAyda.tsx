@@ -3,7 +3,7 @@ import ayda from "../../../assets/Group 27.png";
 import left from "../../../assets/Subtract (2).png";
 import rigth from "../../../assets/Group 56.png";
 
-const WhyAyda = () => {
+const WhyAyda:React.FC  = () => {
   return (
     <div className="w-full h-[80vh] relative ">
       <div className="">
