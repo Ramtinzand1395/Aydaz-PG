@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./gallerystyles.css"
-const HomeGallery:React.FC  = () => {
+import "./gallerystyles.css";
+const HomeGallery: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const h4Ref = useRef<HTMLHeadingElement>(null);
 
@@ -29,20 +29,17 @@ const HomeGallery:React.FC  = () => {
       <div className="grid grid-cols-3 ">
         <div className=""></div>
         <div className="flex flex-col items-start justify-center gap-10 h-[80vh] col-span-2 container">
-          <h3 ref={h4Ref}  className={`font-bold text-6xl text-[#281A3D] ${
-                isVisible ? 'title_animation' : ''
-              }`}>
+          <h3
+            ref={h4Ref}
+            className={`font-bold text-6xl text-[#281A3D] ${
+              isVisible ? "title_animation" : ""
+            }`}
+          >
             گالری هنربافتمو من
           </h3>
-          <p className={`mx-5 ${
-                isVisible ? 'text_animation' : ''
-              }`}>
-            اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به متن
-            های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم ایپسوم یا
-            طرح‌نما (به انگلیسی: Lorem ipsum) متنی ساختگی و بدون معنی است که
-            برای امتحان فونت و یا پر کردن فضا در یک طراحی گرافیکی و یا صنعت چاپ
-            استفاده میشود. طراحان وب و گرافیک از این متن برای پرکردن صفحه و
-            ارائه شکل کلی طرح استفاده می‌کنند.{" "}
+          <p className={`mx-5 ${isVisible ? "text_animation" : ""}`}>
+            اگه نمیدونی چه بافتی بهت میاد یا اینکه نمیدونی نکات یک بافت خوب چیه
+            دکمه پایین و کلیک کن
           </p>
           <button className="relative inline-block text-lg group">
             <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-[#281A3D] rounded-lg group-hover:text-white">
