@@ -32,22 +32,22 @@ const Header: React.FC = () => {
           </p>
           <p
             className=" whitespace-nowrap  
-          lg:text-3xl md:text-xl text-sm  text-center text-white "
+          lg:text-3xl md:text-xl text-sm  text-center text-white font-vazir"
           >
             آموزش و خدمات تخصصی بافتمو در ایران
           </p>
           <div className="">
             <button className="relative rounded px-5 py-2.5 overflow-hidden group bg-white hover:bg-gradient-to-r hover:from-white hover:to-black text-black hover:ring-2 hover:ring-offset-2 hover:ring-[#4e3377] transition-all ease-out duration-300">
               <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-              <span className="relative flex items-center">
+              <span className="relative flex items-center  font-vazir">
                 <FaUser className="ml-5" />
                 <Link to={"/login"}>ورود/ثبت نام</Link>
               </span>
             </button>
             <button className="relative mx-5 rounded px-5 py-2.5 overflow-hidden group bg-white hover:bg-gradient-to-r hover:from-white hover:to-black text-black hover:ring-2 hover:ring-offset-2 hover:ring-[#4e3377] transition-all ease-out duration-300">
               <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-              <span className="relative flex items-center">
-                <MdCastForEducation  className="ml-5" />
+              <span className="relative flex items-center  font-vazir">
+                <MdCastForEducation className="ml-5" />
                 <Link to={"/login"}>آموزش ها </Link>
               </span>
             </button>

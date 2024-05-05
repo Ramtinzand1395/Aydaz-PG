@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      tanha: ["tanha"],
+      vazir: ["vazir"],
+    },
     extend: {
       container:true
     },

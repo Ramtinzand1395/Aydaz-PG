@@ -19,7 +19,7 @@ const TopHeader:React.FC = () => {
       </div>
       {/* menu */}
       <div className="text-center">
-        <h2 className="font-bold text-xs md:text-xl whitespace-nowrap">
+        <h2 className="font-bold text-xs md:text-xl whitespace-nowrap font-tanha">
           این یه سایت معمولی نیست! ✨چون قراره تورو به درآمد برسونه✨
         </h2>
       </div>
@@ -27,7 +27,7 @@ const TopHeader:React.FC = () => {
       <div className="  justify-end hidden md:flex">
         <button className="relative rounded px-5 py-2.5 overflow-hidden group bg-[#281A3D]  hover:bg-gradient-to-r hover:from-[#281A3D] hover:to-[#4e3377] text-white hover:ring-2 hover:ring-offset-2 hover:ring-[#4e3377] transition-all ease-out duration-300">
           <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-          <span className="relative flex items-center">
+          <span className="relative flex items-center font-vazir">
             <FaUser className="ml-5" />
             <Link to={"/login"}>ورود/ثبت نام</Link>
           </span>
