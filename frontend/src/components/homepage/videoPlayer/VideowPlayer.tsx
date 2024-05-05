@@ -1,6 +1,6 @@
 import React from "react";
 import videow from "../../../assets/ALEX_TERRIBLE_O_Fortuna_COVER_RUSSIAN_HATE_PROJECT_.137.mp4";
-const VideowPlayer = () => {
+const VideowPlayer:React.FC  = () => {
   return (
     <div className="  w-full my-10 flex-col flex items-center justify-center">
       <video className="w-[70vw]" controls>

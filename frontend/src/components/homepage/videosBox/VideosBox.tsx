@@ -5,7 +5,7 @@ import rigth from "../../../assets/Subtract (1).png";
 import videowImage1 from "../../../assets/IMG_20240409_222458_090.jpg";
 import videowImage2 from "../../../assets/IMG_20240409_222458_280.jpg";
 
-const VideosBox = () => {
+const VideosBox:React.FC  = () => {
   const videoName = [
     {
       id: 1,

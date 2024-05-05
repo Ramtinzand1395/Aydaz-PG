@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "./TopHeader";
 import ayda from "../../assets/Ayda-top-header copy.png";
 import baft from "../../assets/baft2.png";
-const Header = () => {
+const Header:React.FC = () => {
   return (
     <div>
       <TopHeader />

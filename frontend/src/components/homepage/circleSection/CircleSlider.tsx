@@ -4,7 +4,7 @@ import cicle from "../../../assets/1.png";
 import { Autoplay } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
-const CircleSlider = () => {
+const CircleSlider:React.FC = () => {
   return (
     <Swiper
       spaceBetween={50}

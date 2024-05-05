@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeGallery = () => {
+const HomeGallery:React.FC  = () => {
   return (
     <div className="gallerybackground w-full ">
       <div className="grid grid-cols-3">

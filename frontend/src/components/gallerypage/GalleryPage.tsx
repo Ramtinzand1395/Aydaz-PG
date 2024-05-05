@@ -1,14 +1,11 @@
-import { FaHome } from "react-icons/fa";
+import React from "react";
 import img from "../../assets/IMG_20240409_222458_090.jpg";
 import img2 from "../../assets/purple-neon-border-with-flare-on-the-top-background-free-video.jpg";
 import img3 from "../../assets/registerbg.webp";
-import img4 from "../../assets/1.png";
 import hover1 from "../../assets/hover1.jpg";
 import hover2 from "../../assets/hover2.jpg";
 
-import Menu from "../menu/Menu";
 import TopHeader from "../header/TopHeader";
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -23,7 +20,7 @@ import "./styles.css";
 // import required modules
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 import ModelImages from "./ModelImages";
-const GalleryPage = () => {
+const GalleryPage: React.FC = () => {
   const hovercars = [
     {
       id: 1,
@@ -65,17 +62,17 @@ const GalleryPage = () => {
       >
         <SwiperSlide>
           <div className=" ">
-            <img className="h-[90vh] w-full" src={img} />
+            <img title="image" className="h-[90vh] w-full" src={img} />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className=" ">
-            <img className="h-[90vh] w-full" src={img2} />
+            <img title="image" className="h-[90vh] w-full" src={img2} />
           </div>
         </SwiperSlide>{" "}
         <SwiperSlide>
           <div className=" ">
-            <img className="h-[90vh] w-full" src={img3} />
+            <img title="image" className="h-[90vh] w-full" src={img3} />
           </div>
         </SwiperSlide>
       </Swiper>
@@ -87,13 +84,13 @@ const GalleryPage = () => {
           {hovercars.map((card) => (
             <div key={card.id} className="card ">
               <div className="wrapper">
-                <img src={card.image1} className="cover-image " />
+                <img title="image" src={card.image1} className="cover-image " />
                 <div className="title">
                   <p className="text-center font-bold text-4xl">مدل افرو</p>
                 </div>
               </div>
 
-              <img src={card.image2} className="character" />
+              <img title="image" src={card.image2} className="character" />
             </div>
           ))}
         </div>

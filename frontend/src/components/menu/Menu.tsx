@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FaUber,
-  FaDoorClosed,
   FaHome,
   FaInstagram,
   FaTelegram,
@@ -10,8 +9,11 @@ import {
 import { MdClose } from "react-icons/md";
 
 import { Link } from "react-router-dom";
-
-const Menu = ({ Openmenu, setOpenmenu }) => {
+interface MenuProps {
+  Openmenu: boolean;
+  setOpenmenu: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const Menu: React.FC<MenuProps> = ({ Openmenu, setOpenmenu }) => {
   const menuItems = [
     {
       id: 1,

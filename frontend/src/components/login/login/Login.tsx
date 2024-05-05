@@ -1,8 +1,7 @@
 import React from "react";
-import { FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";
-import { ErrorMessage, Field, Formik, Form } from "formik";
+ import { ErrorMessage, Field, Formik, Form } from "formik";
 
-const Login = () => {
+const Login:React.FC  = () => {
   return (
     <div className="signUpContainer formContainer">
       <Formik

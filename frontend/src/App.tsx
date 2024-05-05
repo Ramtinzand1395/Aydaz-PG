@@ -4,7 +4,7 @@ import HomePage from "./components/homepage/HomePage.tsx";
 import Login_register from "./components/login/Login_register.tsx";
 import GalleryPage from "./components/gallerypage/GalleryPage.tsx";
 
-const App = () => {
+const App:React.FC  = () => {
   return (
     <div>
       <Routes>

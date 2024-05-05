@@ -5,7 +5,7 @@ import img3 from "../../assets/registerbg.webp";
 import img4 from "../../assets/1.png";
 import hover1 from "../../assets/hover1.jpg";
 import hover2 from "../../assets/hover2.jpg";
-const ModelImages = () => {
+const ModelImages:React.FC = () => {
   const fakeData = [
     {
       id: 1,
@@ -69,7 +69,7 @@ const ModelImages = () => {
             <p>{data.text}</p>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-5 my-10 image-container">
               {data.image.map((image) => (
-                <img className="md:h-[30vh] h-auto w-full rounded-2xl " src={image.image} />
+                <img title="models" className="md:h-[30vh] h-auto w-full rounded-2xl " src={image.image} />
               ))}
             </div>
             <button className="relative inline-block text-lg group">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowAltCircleDown } from "react-icons/fa";
 
-const Questions = () => {
+const Questions: React.FC = () => {
   const questions = [
     {
       id: 1,
@@ -35,9 +35,9 @@ const Questions = () => {
     },
   ];
 
-  const [openQuestionId, setOpenQuestionId] = useState(null);
+  const [openQuestionId, setOpenQuestionId] = useState<number | null>(null);
 
-  const toggleAnswer = (id) => {
+  const toggleAnswer = (id: number) => {
     setOpenQuestionId(openQuestionId === id ? null : id);
   };
 
@@ -65,7 +65,12 @@ const Questions = () => {
                 <h4 className="">{item.question}</h4>
               </div>
               <div className="">
-                <FaArrowAltCircleDown size={30} className={`${openQuestionId === item.id ? "rotateUp" : "rotatedown"}`} />
+                <FaArrowAltCircleDown
+                  size={30}
+                  className={`${
+                    openQuestionId === item.id ? "rotateUp" : "rotatedown"
+                  }`}
+                />
               </div>
             </div>
             {openQuestionId === item.id && (

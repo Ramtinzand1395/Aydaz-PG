@@ -4,7 +4,7 @@ import { TiThMenu } from "react-icons/ti";
 import Menu from "../menu/Menu";
 import { Link } from "react-router-dom";
 
-const TopHeader = () => {
+const TopHeader:React.FC = () => {
   const [Openmenu, setOpenmenu] = useState(false);
   return (
     <div className=" flex items-center justify-between p-2 px-5">

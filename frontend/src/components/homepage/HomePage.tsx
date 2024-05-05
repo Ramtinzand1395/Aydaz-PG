@@ -9,7 +9,7 @@ import HomeGallery from './gallery/HomeGallery'
 import Footer from '../footer/Footer'
   
 
-const HomePage = () => {
+const HomePage:React.FC  = () => {
   return (
     <div>
         <Header />

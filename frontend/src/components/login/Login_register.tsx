@@ -3,9 +3,8 @@ import TopHeader from "../header/TopHeader";
 
 import Register from "./register/Register";
 import Login from "./login/Login";
-import Footer from "../footer/Footer";
-
-const Login_register = () => {
+ 
+const Login_register:React.FC  = () => {
   const [signInClicked, setSignInClicked] = useState(false);
 
   return (

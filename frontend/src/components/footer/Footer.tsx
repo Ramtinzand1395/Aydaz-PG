@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../assets/baft2.png";
 import { FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
-const Footer = () => {
+const Footer:React.FC = () => {
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 ">
